@@ -26,11 +26,11 @@
         <div class="container m-3">
             <b>YOUR FACILITATORS<br/></b>
             <div class="btn-group">
-                <a target="_blank" href="{{ url_for('myspace_arielle') }}" type="button" class="btn btn-primary">Arielle
+                <a target="_blank" href="{{ url_for('myspace_arielle') }}" class="btn btn-primary">Arielle
                     Hernandez<br/><img
                             src="{{url_for('static', filename='merperson_emoji-mermaid.png')}}" width="50"/></a>
-                <a class="btn btn-primary mt-2" type="button"> <i class="fas fa-plus"></i> </a>
-                <a target="_blank" href="{{ url_for('myspace_stephanie') }}" type="button" class="btn btn-primary"
+                <a class="btn btn-primary mt-2"> <i class="fas fa-plus"></i> </a>
+                <a target="_blank" href="{{ url_for('myspace_stephanie') }}" class="btn btn-primary"
                    style="text-color: #white">Stephanie Fuentes<br/><img
                         src="{{url_for('static', filename='fairy_emoji-fairy.png')}}" width="50"/></a>
             </div>
@@ -38,7 +38,7 @@
     <div class="container">
         <a target="_blank" href="https://www.facebook.com/groups/404969296191808/permalink/2330444106977641/"
            class="btn btn-secondary mt-2">RSVP on <i class="fab fa-facebook"></i></a>
-        <a target="_blank" href="#" class="btn btn-secondary mt-2">Contact us <i class="far fa-envelope"></i></a>
+        <a href="{{ url_for('contact_page') }}" class="btn btn-secondary mt-2">Contact us <i class="far fa-envelope"></i></a>
     </div>
     <div class="container mt-2">
         <a href="{{ url_for('materials') }}" class="btn btn-lg btn-secondary">Get the Book <i

@@ -31,6 +31,10 @@ def myspace_arielle():
 def myspace_stephanie():
     return render_template("index_stephanie.html")
 
+@app.route('/contact')
+def contact_page():
+    return render_template("contact_page.html")
+
 
 if __name__ == "__main__":
     app.run(debug=True)

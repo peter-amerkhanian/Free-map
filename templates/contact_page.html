@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block style %}
+<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+{% endblock style %}
+{% block header %}
+<header class="masthead mb-auto">
+    <div class="inner">
+        <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+            <a class="nav-link" href="{{ url_for('maps') }}">F.R.E.E. Map</a>
+            <a class="nav-link" href="{{ url_for('materials') }}">Materials</a>
+            <a class="nav-link" href="{{ url_for('agenda') }}">Agenda</a>
+        </nav>
+    </div>
+</header>
+{% endblock header %}
+{% block content %}
+<main role="main" class="inner cover">
+    <h1 class="cover-heading"><b>Contact <i class="far fa-envelope"></i> </b></h1>
+    <div class="container mt-3">
+        <b>Samantha Norstedt</b> | President of F.R.E.E.
+    </div>
+    <div class="container mt-3">
+        <b>Arielle Hernandez</b> | Facilitator
+    </div>
+    <div class="container mt-3">
+        <b>Stephanie Fuentes</b> | Facilitator
+    </div>
+</main>
+{% endblock content %}
