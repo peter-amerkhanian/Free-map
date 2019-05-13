@@ -1,0 +1,1595 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>-->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>-->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_7eb0c2728b1f4e19ac0005f1b047d701 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_7eb0c2728b1f4e19ac0005f1b047d701" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_7eb0c2728b1f4e19ac0005f1b047d701 = L.map(
+        'map_7eb0c2728b1f4e19ac0005f1b047d701', {
+        center: [-1.8312, -78.1834],
+        zoom: 6,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+
+    
+    var tile_layer_0e4a6ee87c61448fab9c5e0b40edfe24 = L.tileLayer(
+        'https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_7eb0c2728b1f4e19ac0005f1b047d701);
+    
+        var marker_944d4daedba541b8993a09ade5fa2b59 = L.marker(
+            [-0.22985, -78.52495],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_7eb0c2728b1f4e19ac0005f1b047d701);
+        
+    
+
+                var custom_icon_50262a0ea9124aff8106789164fc0160 = L.icon({
+                    iconUrl: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/153/rose_1f339.png',
+                    iconSize: [38,38],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_944d4daedba541b8993a09ade5fa2b59.setIcon(custom_icon_50262a0ea9124aff8106789164fc0160);
+            
+    
+            var popup_923ae7ac07c14afb91f27615bda56c0f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4362b6478a9b463abc67ff7c327095b5 = $(`<div id="html_4362b6478a9b463abc67ff7c327095b5" style="width: 100.0%; height: 100.0%;"><b>Samantha Nordstedt</b><p>Quito, Pichincha</p><i>Omni: 119</i></div>`)[0];
+                popup_923ae7ac07c14afb91f27615bda56c0f.setContent(html_4362b6478a9b463abc67ff7c327095b5);
+            
+
+            marker_944d4daedba541b8993a09ade5fa2b59.bindPopup(popup_923ae7ac07c14afb91f27615bda56c0f)
+            ;
+
+            
+        
+    
+        marker_944d4daedba541b8993a09ade5fa2b59.bindTooltip(
+            `<div>`
+            + `Samantha Nordstedt` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_6bbac928e1f44d33911cd9539aef2c84 = L.marker(
+            [-1.85, -79.96667],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_7eb0c2728b1f4e19ac0005f1b047d701);
+        
+    
+
+                var custom_icon_fabf80336ff847448bc494221ab84aff = L.icon({
+                    iconUrl: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/153/white-heart-suit_2661.png',
+                    iconSize: [28,28],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_6bbac928e1f44d33911cd9539aef2c84.setIcon(custom_icon_fabf80336ff847448bc494221ab84aff);
+            
+    
+            var popup_4808056d0a084bf8a95e743590849d83 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_031f58f9e935455c813591af033ebda9 = $(`<div id="html_031f58f9e935455c813591af033ebda9" style="width: 100.0%; height: 100.0%;"><b>Jesse Cote</b><p>Daule, Guayas</p><i>Omni: 120</i></div>`)[0];
+                popup_4808056d0a084bf8a95e743590849d83.setContent(html_031f58f9e935455c813591af033ebda9);
+            
+
+            marker_6bbac928e1f44d33911cd9539aef2c84.bindPopup(popup_4808056d0a084bf8a95e743590849d83)
+            ;
+
+            
+        
+    
+        marker_6bbac928e1f44d33911cd9539aef2c84.bindTooltip(
+            `<div>`
+            + `Jesse Cote` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_84a242f3e9c04baf9dbfde6036f18b00 = L.marker(
+            [-0.23065, -78.4484],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_7eb0c2728b1f4e19ac0005f1b047d701);
+        
+    
+
+                var custom_icon_289486897fec42ab9a6c9662340e3465 = L.icon({
+                    iconUrl: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/153/white-heart-suit_2661.png',
+                    iconSize: [28,28],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_84a242f3e9c04baf9dbfde6036f18b00.setIcon(custom_icon_289486897fec42ab9a6c9662340e3465);
+            
+    
+            var popup_fd75e7c0d6264c75a8407cf18d96c082 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_48d3861b29f94c43bdc91f628853c317 = $(`<div id="html_48d3861b29f94c43bdc91f628853c317" style="width: 100.0%; height: 100.0%;"><b>Meg Hunter</b><p>Lumbisí, Pichincha</p><i>Omni: 120</i></div>`)[0];
+                popup_fd75e7c0d6264c75a8407cf18d96c082.setContent(html_48d3861b29f94c43bdc91f628853c317);
+            
+
+            marker_84a242f3e9c04baf9dbfde6036f18b00.bindPopup(popup_fd75e7c0d6264c75a8407cf18d96c082)
+            ;
+
+            
+        
+    
+        marker_84a242f3e9c04baf9dbfde6036f18b00.bindTooltip(
+            `<div>`
+            + `Meg Hunter` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_42269121934d4d93903cd400a9bcd2d0 = L.marker(
+            [-0.22985, -78.49495],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_7eb0c2728b1f4e19ac0005f1b047d701);
+        
+    
+
+                var custom_icon_0be8b0db5f67431a8d736df78448bca5 = L.icon({
+                    iconUrl: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/153/rose_1f339.png',
+                    iconSize: [38,38],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_42269121934d4d93903cd400a9bcd2d0.setIcon(custom_icon_0be8b0db5f67431a8d736df78448bca5);
+            
+    
+            var popup_10e59ebb98744bb6ae116b084158efd5 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_94e59d05da294dee88e5b26fb2e55503 = $(`<div id="html_94e59d05da294dee88e5b26fb2e55503" style="width: 100.0%; height: 100.0%;"><b>Alejandra Garcia</b><p>Quito, Pichincha</p><i>Omni: 118</i></div>`)[0];
+                popup_10e59ebb98744bb6ae116b084158efd5.setContent(html_94e59d05da294dee88e5b26fb2e55503);
+            
+
+            marker_42269121934d4d93903cd400a9bcd2d0.bindPopup(popup_10e59ebb98744bb6ae116b084158efd5)
+            ;
+
+            
+        
+    
+        marker_42269121934d4d93903cd400a9bcd2d0.bindTooltip(
+            `<div>`
+            + `Alejandra Garcia` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_35352d8d5d684cfaba965657f97c9de4 = L.marker(
+            [-0.95759, -78.69636],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_7eb0c2728b1f4e19ac0005f1b047d701);
+        
+    
+
+                var custom_icon_fa9eff08048147d0ae69c94482d3c89b = L.icon({
+                    iconUrl: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/153/rose_1f339.png',
+                    iconSize: [38,38],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_35352d8d5d684cfaba965657f97c9de4.setIcon(custom_icon_fa9eff08048147d0ae69c94482d3c89b);
+            
+    
+            var popup_928f1dd0c5904f2fb640cc9ea8b1fc06 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_87b38040422f4b8e97280e5421ebca5f = $(`<div id="html_87b38040422f4b8e97280e5421ebca5f" style="width: 100.0%; height: 100.0%;"><b>Melissa Ortiz</b><p>Pujili, Cotopaxi</p><i>Omni: 119</i></div>`)[0];
+                popup_928f1dd0c5904f2fb640cc9ea8b1fc06.setContent(html_87b38040422f4b8e97280e5421ebca5f);
+            
+
+            marker_35352d8d5d684cfaba965657f97c9de4.bindPopup(popup_928f1dd0c5904f2fb640cc9ea8b1fc06)
+            ;
+
+            
+        
+    
+        marker_35352d8d5d684cfaba965657f97c9de4.bindTooltip(
+            `<div>`
+            + `Melissa Ortiz` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_a62fd77393ad4bc8a75a3e628dc016e7 = L.marker(
+            [-3.25861, -79.96053],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_7eb0c2728b1f4e19ac0005f1b047d701);
+        
+    
+
+                var custom_icon_27e826b38386489cb73d25bd8a60d459 = L.icon({
+                    iconUrl: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/153/white-heart-suit_2661.png',
+                    iconSize: [28,28],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_a62fd77393ad4bc8a75a3e628dc016e7.setIcon(custom_icon_27e826b38386489cb73d25bd8a60d459);
+            
+    
+            var popup_4cc9263b6e3b4bfa9d1d4319cbc8fc41 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_00254df7f9234fe2942007d868c88211 = $(`<div id="html_00254df7f9234fe2942007d868c88211" style="width: 100.0%; height: 100.0%;"><b>Peter Amerkhanian</b><p>Machala, El Oro</p><i>Omni: 119</i></div>`)[0];
+                popup_4cc9263b6e3b4bfa9d1d4319cbc8fc41.setContent(html_00254df7f9234fe2942007d868c88211);
+            
+
+            marker_a62fd77393ad4bc8a75a3e628dc016e7.bindPopup(popup_4cc9263b6e3b4bfa9d1d4319cbc8fc41)
+            ;
+
+            
+        
+    
+        marker_a62fd77393ad4bc8a75a3e628dc016e7.bindTooltip(
+            `<div>`
+            + `Peter Amerkhanian` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_b83cced1f3c64a26a822ee3c97e79598 = L.marker(
+            [-3.25861, -79.93053],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_7eb0c2728b1f4e19ac0005f1b047d701);
+        
+    
+
+                var custom_icon_b6ca91d6caea41b58aa4fceb781ba163 = L.icon({
+                    iconUrl: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/153/rose_1f339.png',
+                    iconSize: [38,38],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_b83cced1f3c64a26a822ee3c97e79598.setIcon(custom_icon_b6ca91d6caea41b58aa4fceb781ba163);
+            
+    
+            var popup_34e5ea27ebd0400db7f815ac448573ee = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e3b059523ac243159e2d0db6f48c52a0 = $(`<div id="html_e3b059523ac243159e2d0db6f48c52a0" style="width: 100.0%; height: 100.0%;"><b>Arielle Hernandez</b><p>Machala, El Oro</p><i>Omni: 119</i></div>`)[0];
+                popup_34e5ea27ebd0400db7f815ac448573ee.setContent(html_e3b059523ac243159e2d0db6f48c52a0);
+            
+
+            marker_b83cced1f3c64a26a822ee3c97e79598.bindPopup(popup_34e5ea27ebd0400db7f815ac448573ee)
+            ;
+
+            
+        
+    
+        marker_b83cced1f3c64a26a822ee3c97e79598.bindTooltip(
+            `<div>`
+            + `Arielle Hernandez` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_2cc63053d6be4556b75252dda64735af = L.marker(
+            [-0.25305, -79.17536],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_7eb0c2728b1f4e19ac0005f1b047d701);
+        
+    
+
+                var custom_icon_6da3f23e711f4162910e00be04d51ec0 = L.icon({
+                    iconUrl: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/153/rose_1f339.png',
+                    iconSize: [38,38],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_2cc63053d6be4556b75252dda64735af.setIcon(custom_icon_6da3f23e711f4162910e00be04d51ec0);
+            
+    
+            var popup_eacaca26036b43eaa0ee34ee50cfc563 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c02352fef8b64dbcb28f7067044fd203 = $(`<div id="html_c02352fef8b64dbcb28f7067044fd203" style="width: 100.0%; height: 100.0%;"><b>Donald Blair</b><p>Santo Domingo, Santo Domingo</p><i>Omni: 121</i></div>`)[0];
+                popup_eacaca26036b43eaa0ee34ee50cfc563.setContent(html_c02352fef8b64dbcb28f7067044fd203);
+            
+
+            marker_2cc63053d6be4556b75252dda64735af.bindPopup(popup_eacaca26036b43eaa0ee34ee50cfc563)
+            ;
+
+            
+        
+    
+        marker_2cc63053d6be4556b75252dda64735af.bindTooltip(
+            `<div>`
+            + `Donald Blair` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_5b321ef319f642f5aa2f54410cf2874e = L.marker(
+            [-1.30201, -78.21615],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_7eb0c2728b1f4e19ac0005f1b047d701);
+        
+    
+
+                var custom_icon_9e193a357df14cd28790522380cee022 = L.icon({
+                    iconUrl: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/153/white-heart-suit_2661.png',
+                    iconSize: [28,28],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_5b321ef319f642f5aa2f54410cf2874e.setIcon(custom_icon_9e193a357df14cd28790522380cee022);
+            
+    
+            var popup_e913df79631346998c8d6c20017a7667 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_52e81ab211974ea9a0a20a16dda97ce2 = $(`<div id="html_52e81ab211974ea9a0a20a16dda97ce2" style="width: 100.0%; height: 100.0%;"><b>Sam Archibald</b><p>Rio Negro, Tungurahua</p><i>Omni: 120</i></div>`)[0];
+                popup_e913df79631346998c8d6c20017a7667.setContent(html_52e81ab211974ea9a0a20a16dda97ce2);
+            
+
+            marker_5b321ef319f642f5aa2f54410cf2874e.bindPopup(popup_e913df79631346998c8d6c20017a7667)
+            ;
+
+            
+        
+    
+        marker_5b321ef319f642f5aa2f54410cf2874e.bindTooltip(
+            `<div>`
+            + `Sam Archibald` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_962345bf9ecb48d49b736e4aa3681795 = L.marker(
+            [-1.55, -80.43333],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_7eb0c2728b1f4e19ac0005f1b047d701);
+        
+    
+
+                var custom_icon_d518b38b4aa44ab6b53db82c18bd9c79 = L.icon({
+                    iconUrl: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/153/rose_1f339.png',
+                    iconSize: [38,38],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_962345bf9ecb48d49b736e4aa3681795.setIcon(custom_icon_d518b38b4aa44ab6b53db82c18bd9c79);
+            
+    
+            var popup_18eaccca1d5c454186d5c5a522c5d720 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_9978d2531df14d82a4c7fe68dd339412 = $(`<div id="html_9978d2531df14d82a4c7fe68dd339412" style="width: 100.0%; height: 100.0%;"><b>Arielle Benjamin</b><p>Pajan, Manabi</p><i>Omni: 118</i></div>`)[0];
+                popup_18eaccca1d5c454186d5c5a522c5d720.setContent(html_9978d2531df14d82a4c7fe68dd339412);
+            
+
+            marker_962345bf9ecb48d49b736e4aa3681795.bindPopup(popup_18eaccca1d5c454186d5c5a522c5d720)
+            ;
+
+            
+        
+    
+        marker_962345bf9ecb48d49b736e4aa3681795.bindTooltip(
+            `<div>`
+            + `Arielle Benjamin` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_4ff41fd4caa445b3a841f994181dfc38 = L.marker(
+            [-2.19616, -79.88621],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_7eb0c2728b1f4e19ac0005f1b047d701);
+        
+    
+
+                var custom_icon_ae90a643fcd3476dbdd599770b65df07 = L.icon({
+                    iconUrl: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/153/rose_1f339.png',
+                    iconSize: [38,38],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_4ff41fd4caa445b3a841f994181dfc38.setIcon(custom_icon_ae90a643fcd3476dbdd599770b65df07);
+            
+    
+            var popup_702ce62b5c744777b1f288e9bce7aff4 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_9b6914713a7b4fe4b32c98cd727b076c = $(`<div id="html_9b6914713a7b4fe4b32c98cd727b076c" style="width: 100.0%; height: 100.0%;"><b>Tatyana Ray</b><p>Guayaquil, Guayas</p><i>Omni: 120</i></div>`)[0];
+                popup_702ce62b5c744777b1f288e9bce7aff4.setContent(html_9b6914713a7b4fe4b32c98cd727b076c);
+            
+
+            marker_4ff41fd4caa445b3a841f994181dfc38.bindPopup(popup_702ce62b5c744777b1f288e9bce7aff4)
+            ;
+
+            
+        
+    
+        marker_4ff41fd4caa445b3a841f994181dfc38.bindTooltip(
+            `<div>`
+            + `Tatyana Ray` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_6412328c0f724aae9132a021a57da8de = L.marker(
+            [-1.48369, -78.00257],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_7eb0c2728b1f4e19ac0005f1b047d701);
+        
+    
+
+                var custom_icon_ef8e4c15c83c4a6d8b31fb9ace4562d5 = L.icon({
+                    iconUrl: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/153/rose_1f339.png',
+                    iconSize: [38,38],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_6412328c0f724aae9132a021a57da8de.setIcon(custom_icon_ef8e4c15c83c4a6d8b31fb9ace4562d5);
+            
+    
+            var popup_a3ca10664a604ad2b1712c1bf2ea3dff = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_9fe1e0a0dd3e4a25a94c3ddbb4915ae4 = $(`<div id="html_9fe1e0a0dd3e4a25a94c3ddbb4915ae4" style="width: 100.0%; height: 100.0%;"><b>Emily Gordon</b><p>Puyo, Pastaza</p><i>Omni: 118</i></div>`)[0];
+                popup_a3ca10664a604ad2b1712c1bf2ea3dff.setContent(html_9fe1e0a0dd3e4a25a94c3ddbb4915ae4);
+            
+
+            marker_6412328c0f724aae9132a021a57da8de.bindPopup(popup_a3ca10664a604ad2b1712c1bf2ea3dff)
+            ;
+
+            
+        
+    
+        marker_6412328c0f724aae9132a021a57da8de.bindTooltip(
+            `<div>`
+            + `Emily Gordon` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_bc9fcedad05f4c8f82fcba1df2820365 = L.marker(
+            [-0.25305, -79.14536],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_7eb0c2728b1f4e19ac0005f1b047d701);
+        
+    
+
+                var custom_icon_d28549015ba14d9997a215267ba688e4 = L.icon({
+                    iconUrl: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/153/rose_1f339.png',
+                    iconSize: [38,38],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_bc9fcedad05f4c8f82fcba1df2820365.setIcon(custom_icon_d28549015ba14d9997a215267ba688e4);
+            
+    
+            var popup_dc3fe8b32cee4cd184c925dc00b3a9c5 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0de4eacff1ed4a90834204c303a4657f = $(`<div id="html_0de4eacff1ed4a90834204c303a4657f" style="width: 100.0%; height: 100.0%;"><b>Laura Contreras</b><p>Santo Domingo, Santo Domingo</p><i>Omni: 119</i></div>`)[0];
+                popup_dc3fe8b32cee4cd184c925dc00b3a9c5.setContent(html_0de4eacff1ed4a90834204c303a4657f);
+            
+
+            marker_bc9fcedad05f4c8f82fcba1df2820365.bindPopup(popup_dc3fe8b32cee4cd184c925dc00b3a9c5)
+            ;
+
+            
+        
+    
+        marker_bc9fcedad05f4c8f82fcba1df2820365.bindTooltip(
+            `<div>`
+            + `Laura Contreras` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_abfd3b5c464c467db7dca114a9435752 = L.marker(
+            [-2.22622, -80.85873],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_7eb0c2728b1f4e19ac0005f1b047d701);
+        
+    
+
+                var custom_icon_9490ad95f8824c08b05a90cfc834b495 = L.icon({
+                    iconUrl: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/153/white-heart-suit_2661.png',
+                    iconSize: [28,28],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_abfd3b5c464c467db7dca114a9435752.setIcon(custom_icon_9490ad95f8824c08b05a90cfc834b495);
+            
+    
+            var popup_a05ff8198e8547fba54ab5eec65459be = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_bc5ae4c8e0ca436dbedde9e7b3fb1d14 = $(`<div id="html_bc5ae4c8e0ca436dbedde9e7b3fb1d14" style="width: 100.0%; height: 100.0%;"><b>Jonny Ricci</b><p>Santa Elena, Santa Elena</p><i>Omni: 121</i></div>`)[0];
+                popup_a05ff8198e8547fba54ab5eec65459be.setContent(html_bc5ae4c8e0ca436dbedde9e7b3fb1d14);
+            
+
+            marker_abfd3b5c464c467db7dca114a9435752.bindPopup(popup_a05ff8198e8547fba54ab5eec65459be)
+            ;
+
+            
+        
+    
+        marker_abfd3b5c464c467db7dca114a9435752.bindTooltip(
+            `<div>`
+            + `Jonny Ricci` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_62a0384660944a44a71669b234391719 = L.marker(
+            [-2.5, -78.8],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_7eb0c2728b1f4e19ac0005f1b047d701);
+        
+    
+
+                var custom_icon_dc9aecd5a828485d8602bb4d96af159b = L.icon({
+                    iconUrl: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/153/white-heart-suit_2661.png',
+                    iconSize: [28,28],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_62a0384660944a44a71669b234391719.setIcon(custom_icon_dc9aecd5a828485d8602bb4d96af159b);
+            
+    
+            var popup_53583b15072b4cf2a6e1a3388609bdcb = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_864f10ed5c394ddda18d0a7527574dac = $(`<div id="html_864f10ed5c394ddda18d0a7527574dac" style="width: 100.0%; height: 100.0%;"><b>Emma Lee Tremblay</b><p>Cañar, Azuay</p><i>Omni: 119</i></div>`)[0];
+                popup_53583b15072b4cf2a6e1a3388609bdcb.setContent(html_864f10ed5c394ddda18d0a7527574dac);
+            
+
+            marker_62a0384660944a44a71669b234391719.bindPopup(popup_53583b15072b4cf2a6e1a3388609bdcb)
+            ;
+
+            
+        
+    
+        marker_62a0384660944a44a71669b234391719.bindTooltip(
+            `<div>`
+            + `Emma Lee Tremblay` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_24ed7c07529c4e168e32d89d42337d5e = L.marker(
+            [-1.48369, -77.97257],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_7eb0c2728b1f4e19ac0005f1b047d701);
+        
+    
+
+                var custom_icon_a7bafc3067aa4cd080c25782d8118633 = L.icon({
+                    iconUrl: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/153/rose_1f339.png',
+                    iconSize: [38,38],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_24ed7c07529c4e168e32d89d42337d5e.setIcon(custom_icon_a7bafc3067aa4cd080c25782d8118633);
+            
+    
+            var popup_88d4a337bbfc4d35be89de6bbab7f7e8 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_5a325efc9880436c91eee643b7496f99 = $(`<div id="html_5a325efc9880436c91eee643b7496f99" style="width: 100.0%; height: 100.0%;"><b>Paulina Prasad</b><p>Puyo, Pastaza</p><i>Omni: 121</i></div>`)[0];
+                popup_88d4a337bbfc4d35be89de6bbab7f7e8.setContent(html_5a325efc9880436c91eee643b7496f99);
+            
+
+            marker_24ed7c07529c4e168e32d89d42337d5e.bindPopup(popup_88d4a337bbfc4d35be89de6bbab7f7e8)
+            ;
+
+            
+        
+    
+        marker_24ed7c07529c4e168e32d89d42337d5e.bindTooltip(
+            `<div>`
+            + `Paulina Prasad` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_54bb9a071b214b6e86c6fc61067ea7db = L.marker(
+            [-0.22985, -78.46495],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_7eb0c2728b1f4e19ac0005f1b047d701);
+        
+    
+
+                var custom_icon_81f6cac2087344f1bfc3fd839e2157cb = L.icon({
+                    iconUrl: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/153/rose_1f339.png',
+                    iconSize: [38,38],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_54bb9a071b214b6e86c6fc61067ea7db.setIcon(custom_icon_81f6cac2087344f1bfc3fd839e2157cb);
+            
+    
+            var popup_a64f7471c5df4e1891664ec3482e15ba = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_45ffaf387618487f982fd2b460a65c25 = $(`<div id="html_45ffaf387618487f982fd2b460a65c25" style="width: 100.0%; height: 100.0%;"><b>Claudia Castañeda</b><p>Quito, Pichincha</p><i>Omni: 121</i></div>`)[0];
+                popup_a64f7471c5df4e1891664ec3482e15ba.setContent(html_45ffaf387618487f982fd2b460a65c25);
+            
+
+            marker_54bb9a071b214b6e86c6fc61067ea7db.bindPopup(popup_a64f7471c5df4e1891664ec3482e15ba)
+            ;
+
+            
+        
+    
+        marker_54bb9a071b214b6e86c6fc61067ea7db.bindTooltip(
+            `<div>`
+            + `Claudia Castañeda` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_08aac4bf9be343a6b9f4430474700361 = L.marker(
+            [-1.59263, -79.00098],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_7eb0c2728b1f4e19ac0005f1b047d701);
+        
+    
+
+                var custom_icon_a7b697356f3f4acca3c63f15f4132c36 = L.icon({
+                    iconUrl: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/153/white-heart-suit_2661.png',
+                    iconSize: [28,28],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_08aac4bf9be343a6b9f4430474700361.setIcon(custom_icon_a7b697356f3f4acca3c63f15f4132c36);
+            
+    
+            var popup_4676561b0eb642e4be6d972a458996cf = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_311aa687fa4441e597ceed4b81c7fe10 = $(`<div id="html_311aa687fa4441e597ceed4b81c7fe10" style="width: 100.0%; height: 100.0%;"><b>Emma Peel</b><p>Guaranda, Bolivar</p><i>Omni: 120</i></div>`)[0];
+                popup_4676561b0eb642e4be6d972a458996cf.setContent(html_311aa687fa4441e597ceed4b81c7fe10);
+            
+
+            marker_08aac4bf9be343a6b9f4430474700361.bindPopup(popup_4676561b0eb642e4be6d972a458996cf)
+            ;
+
+            
+        
+    
+        marker_08aac4bf9be343a6b9f4430474700361.bindTooltip(
+            `<div>`
+            + `Emma Peel` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_55b171afb80541bbbda246a79a391660 = L.marker(
+            [-2.90055, -79.00453],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_7eb0c2728b1f4e19ac0005f1b047d701);
+        
+    
+
+                var custom_icon_5a5d848e562c45f2b3855bfc9feca89e = L.icon({
+                    iconUrl: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/153/white-heart-suit_2661.png',
+                    iconSize: [28,28],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_55b171afb80541bbbda246a79a391660.setIcon(custom_icon_5a5d848e562c45f2b3855bfc9feca89e);
+            
+    
+            var popup_bd0e9ed5818d4c528be6c824d0d28651 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_933b6f5678e344e8a6a81bce9e81b6ed = $(`<div id="html_933b6f5678e344e8a6a81bce9e81b6ed" style="width: 100.0%; height: 100.0%;"><b>Caroline Wilkerson</b><p>Cuenca, Azuay</p><i>Omni: 120</i></div>`)[0];
+                popup_bd0e9ed5818d4c528be6c824d0d28651.setContent(html_933b6f5678e344e8a6a81bce9e81b6ed);
+            
+
+            marker_55b171afb80541bbbda246a79a391660.bindPopup(popup_bd0e9ed5818d4c528be6c824d0d28651)
+            ;
+
+            
+        
+    
+        marker_55b171afb80541bbbda246a79a391660.bindTooltip(
+            `<div>`
+            + `Caroline Wilkerson` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_c86a9666add345dd8ac6062405fcc1f5 = L.marker(
+            [-1.68444, -79.02526],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_7eb0c2728b1f4e19ac0005f1b047d701);
+        
+    
+
+                var custom_icon_b26b6d8ccc634c4ab638b1a275689fe2 = L.icon({
+                    iconUrl: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/153/rose_1f339.png',
+                    iconSize: [38,38],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_c86a9666add345dd8ac6062405fcc1f5.setIcon(custom_icon_b26b6d8ccc634c4ab638b1a275689fe2);
+            
+    
+            var popup_66c75cfdd21543f99b69c9286fd3bf0c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a486bcbee1ff412d8f16ea75d056f148 = $(`<div id="html_a486bcbee1ff412d8f16ea75d056f148" style="width: 100.0%; height: 100.0%;"><b>Stephanie Fuentes</b><p>Chimbo, Bolivar</p><i>Omni: 119</i></div>`)[0];
+                popup_66c75cfdd21543f99b69c9286fd3bf0c.setContent(html_a486bcbee1ff412d8f16ea75d056f148);
+            
+
+            marker_c86a9666add345dd8ac6062405fcc1f5.bindPopup(popup_66c75cfdd21543f99b69c9286fd3bf0c)
+            ;
+
+            
+        
+    
+        marker_c86a9666add345dd8ac6062405fcc1f5.bindTooltip(
+            `<div>`
+            + `Stephanie Fuentes` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_7e6123cab4f041598027344a2da46c3c = L.marker(
+            [-1.713775, -80.797806],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_7eb0c2728b1f4e19ac0005f1b047d701);
+        
+    
+
+                var custom_icon_0d76321f53e84f8882716ccaf8d2f324 = L.icon({
+                    iconUrl: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/153/rose_1f339.png',
+                    iconSize: [38,38],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_7e6123cab4f041598027344a2da46c3c.setIcon(custom_icon_0d76321f53e84f8882716ccaf8d2f324);
+            
+    
+            var popup_62082ddd1ef141d7b6fd610b3680aab7 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e6bc1780b8824df3abfbf71e928d18f4 = $(`<div id="html_e6bc1780b8824df3abfbf71e928d18f4" style="width: 100.0%; height: 100.0%;"><b>Jaquis Smith</b><p>Entrada, Santa Elena</p><i>Omni: 118</i></div>`)[0];
+                popup_62082ddd1ef141d7b6fd610b3680aab7.setContent(html_e6bc1780b8824df3abfbf71e928d18f4);
+            
+
+            marker_7e6123cab4f041598027344a2da46c3c.bindPopup(popup_62082ddd1ef141d7b6fd610b3680aab7)
+            ;
+
+            
+        
+    
+        marker_7e6123cab4f041598027344a2da46c3c.bindTooltip(
+            `<div>`
+            + `Jaquis Smith` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_d6195daaf13347f08a01ec928e8f1e2a = L.marker(
+            [-1.81563, -80.23309],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_7eb0c2728b1f4e19ac0005f1b047d701);
+        
+    
+
+                var custom_icon_15003db49d994ccf9a9383dccafb5244 = L.icon({
+                    iconUrl: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/153/rose_1f339.png',
+                    iconSize: [38,38],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_d6195daaf13347f08a01ec928e8f1e2a.setIcon(custom_icon_15003db49d994ccf9a9383dccafb5244);
+            
+    
+            var popup_74ce5443773f4613b61cbf8ca39cf4f0 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_736ff0d6d14842f2b8959efd74b6f413 = $(`<div id="html_736ff0d6d14842f2b8959efd74b6f413" style="width: 100.0%; height: 100.0%;"><b>Juan Carlos Castañeda</b><p>Pedro Carbo, Guayas</p><i>Omni: 120</i></div>`)[0];
+                popup_74ce5443773f4613b61cbf8ca39cf4f0.setContent(html_736ff0d6d14842f2b8959efd74b6f413);
+            
+
+            marker_d6195daaf13347f08a01ec928e8f1e2a.bindPopup(popup_74ce5443773f4613b61cbf8ca39cf4f0)
+            ;
+
+            
+        
+    
+        marker_d6195daaf13347f08a01ec928e8f1e2a.bindTooltip(
+            `<div>`
+            + `Juan Carlos Castañeda` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_565543afe5fa4d719fdb9baec6d22109 = L.marker(
+            [-2.19616, -79.85621],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_7eb0c2728b1f4e19ac0005f1b047d701);
+        
+    
+
+                var custom_icon_cb9a22265299438cac741c812a78d1a2 = L.icon({
+                    iconUrl: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/153/rose_1f339.png',
+                    iconSize: [38,38],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_565543afe5fa4d719fdb9baec6d22109.setIcon(custom_icon_cb9a22265299438cac741c812a78d1a2);
+            
+    
+            var popup_6279c6d9661942238c199db3aee3b1ca = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3604f1bed4264e53a3f019dba288d454 = $(`<div id="html_3604f1bed4264e53a3f019dba288d454" style="width: 100.0%; height: 100.0%;"><b>Brenda Pereira</b><p>Guayaquil, Guayas</p><i>Omni: 121</i></div>`)[0];
+                popup_6279c6d9661942238c199db3aee3b1ca.setContent(html_3604f1bed4264e53a3f019dba288d454);
+            
+
+            marker_565543afe5fa4d719fdb9baec6d22109.bindPopup(popup_6279c6d9661942238c199db3aee3b1ca)
+            ;
+
+            
+        
+    
+        marker_565543afe5fa4d719fdb9baec6d22109.bindTooltip(
+            `<div>`
+            + `Brenda Pereira` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_ce61871b2e4241ecb3aba8afcf9607c8 = L.marker(
+            [-2.19616, -79.82621],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_7eb0c2728b1f4e19ac0005f1b047d701);
+        
+    
+
+                var custom_icon_e1b660dbb11946269f9cb82ad41afce2 = L.icon({
+                    iconUrl: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/153/rose_1f339.png',
+                    iconSize: [38,38],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_ce61871b2e4241ecb3aba8afcf9607c8.setIcon(custom_icon_e1b660dbb11946269f9cb82ad41afce2);
+            
+    
+            var popup_9e4b3a1a25684fb48817cb97cb177f80 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_adf524063c264ce191e41dcc0f405969 = $(`<div id="html_adf524063c264ce191e41dcc0f405969" style="width: 100.0%; height: 100.0%;"><b>Claudia Sanabria</b><p>Guayaquil, Guayas</p><i>Omni: 120</i></div>`)[0];
+                popup_9e4b3a1a25684fb48817cb97cb177f80.setContent(html_adf524063c264ce191e41dcc0f405969);
+            
+
+            marker_ce61871b2e4241ecb3aba8afcf9607c8.bindPopup(popup_9e4b3a1a25684fb48817cb97cb177f80)
+            ;
+
+            
+        
+    
+        marker_ce61871b2e4241ecb3aba8afcf9607c8.bindTooltip(
+            `<div>`
+            + `Claudia Sanabria` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_b2ca21e5affd49ce80c873b088e9f7e6 = L.marker(
+            [0.23457, -78.26248],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_7eb0c2728b1f4e19ac0005f1b047d701);
+        
+    
+
+                var custom_icon_870ff24bb170407cae5f9fa79f003b1f = L.icon({
+                    iconUrl: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/153/rose_1f339.png',
+                    iconSize: [38,38],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_b2ca21e5affd49ce80c873b088e9f7e6.setIcon(custom_icon_870ff24bb170407cae5f9fa79f003b1f);
+            
+    
+            var popup_e9a755c96ad043ca9c40991ad769e7e7 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c11979bf9d924a73a7982feb04841f86 = $(`<div id="html_c11979bf9d924a73a7982feb04841f86" style="width: 100.0%; height: 100.0%;"><b>Yessenia Gonzalez</b><p>Otavalo, Imbabura</p><i>Omni: 120</i></div>`)[0];
+                popup_e9a755c96ad043ca9c40991ad769e7e7.setContent(html_c11979bf9d924a73a7982feb04841f86);
+            
+
+            marker_b2ca21e5affd49ce80c873b088e9f7e6.bindPopup(popup_e9a755c96ad043ca9c40991ad769e7e7)
+            ;
+
+            
+        
+    
+        marker_b2ca21e5affd49ce80c873b088e9f7e6.bindTooltip(
+            `<div>`
+            + `Yessenia Gonzalez` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_13661711379a47069886ec66cdebb387 = L.marker(
+            [-0.28703, -78.48132],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_7eb0c2728b1f4e19ac0005f1b047d701);
+        
+    
+
+                var custom_icon_b57aadb4c4754a84aa424886fb7a589a = L.icon({
+                    iconUrl: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/153/rose_1f339.png',
+                    iconSize: [38,38],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_13661711379a47069886ec66cdebb387.setIcon(custom_icon_b57aadb4c4754a84aa424886fb7a589a);
+            
+    
+            var popup_cc9e4346c3314cbf860196672d42e58c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c02b9a91491a49ba836aaaa7e2c84776 = $(`<div id="html_c02b9a91491a49ba836aaaa7e2c84776" style="width: 100.0%; height: 100.0%;"><b>Imhotep Simba</b><p>Conocoto, Pichincha</p><i>Omni: 118</i></div>`)[0];
+                popup_cc9e4346c3314cbf860196672d42e58c.setContent(html_c02b9a91491a49ba836aaaa7e2c84776);
+            
+
+            marker_13661711379a47069886ec66cdebb387.bindPopup(popup_cc9e4346c3314cbf860196672d42e58c)
+            ;
+
+            
+        
+    
+        marker_13661711379a47069886ec66cdebb387.bindTooltip(
+            `<div>`
+            + `Imhotep Simba` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_5c5f8ff7bbc44e11b2ed1d77e159c169 = L.marker(
+            [-0.93521, -78.61554],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_7eb0c2728b1f4e19ac0005f1b047d701);
+        
+    
+
+                var custom_icon_27b47262877f4f288a6d0a3b9f99b0d2 = L.icon({
+                    iconUrl: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/153/rose_1f339.png',
+                    iconSize: [38,38],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_5c5f8ff7bbc44e11b2ed1d77e159c169.setIcon(custom_icon_27b47262877f4f288a6d0a3b9f99b0d2);
+            
+    
+            var popup_a2a9f13bff1e46988f17a48f51ad31f3 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_80e7d61638bf41e9ad74b5f327d7df95 = $(`<div id="html_80e7d61638bf41e9ad74b5f327d7df95" style="width: 100.0%; height: 100.0%;"><b>Jonathan Reyes</b><p>Latacunga, Cotopaxi</p><i>Omni: 121</i></div>`)[0];
+                popup_a2a9f13bff1e46988f17a48f51ad31f3.setContent(html_80e7d61638bf41e9ad74b5f327d7df95);
+            
+
+            marker_5c5f8ff7bbc44e11b2ed1d77e159c169.bindPopup(popup_a2a9f13bff1e46988f17a48f51ad31f3)
+            ;
+
+            
+        
+    
+        marker_5c5f8ff7bbc44e11b2ed1d77e159c169.bindTooltip(
+            `<div>`
+            + `Jonathan Reyes` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_d66b059856fc45b09e8af2a815e35519 = L.marker(
+            [-3.25861, -79.90053],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_7eb0c2728b1f4e19ac0005f1b047d701);
+        
+    
+
+                var custom_icon_07571e66dfd746ccb8e7371edef9ea1f = L.icon({
+                    iconUrl: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/153/rose_1f339.png',
+                    iconSize: [38,38],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_d66b059856fc45b09e8af2a815e35519.setIcon(custom_icon_07571e66dfd746ccb8e7371edef9ea1f);
+            
+    
+            var popup_43e48b6233cb43c9b0ea33716eebe3d0 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6d03d790fed342c298a9625a436b2d49 = $(`<div id="html_6d03d790fed342c298a9625a436b2d49" style="width: 100.0%; height: 100.0%;"><b>Fernando Labastida</b><p>Machala, El Oro</p><i>Omni: 118</i></div>`)[0];
+                popup_43e48b6233cb43c9b0ea33716eebe3d0.setContent(html_6d03d790fed342c298a9625a436b2d49);
+            
+
+            marker_d66b059856fc45b09e8af2a815e35519.bindPopup(popup_43e48b6233cb43c9b0ea33716eebe3d0)
+            ;
+
+            
+        
+    
+        marker_d66b059856fc45b09e8af2a815e35519.bindTooltip(
+            `<div>`
+            + `Fernando Labastida` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_04caa464b1224774aaebbff99b1b917b = L.marker(
+            [-1.48369, -77.94257],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_7eb0c2728b1f4e19ac0005f1b047d701);
+        
+    
+
+                var custom_icon_54a3863980b74de8b0145cd8e1726ead = L.icon({
+                    iconUrl: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/153/white-heart-suit_2661.png',
+                    iconSize: [28,28],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_04caa464b1224774aaebbff99b1b917b.setIcon(custom_icon_54a3863980b74de8b0145cd8e1726ead);
+            
+    
+            var popup_44d89acfd0c74ccb90976dccc1220e52 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d291bf0841834d09bf085766b091b065 = $(`<div id="html_d291bf0841834d09bf085766b091b065" style="width: 100.0%; height: 100.0%;"><b>Eric Canales</b><p>Puyo, Pastaza</p><i>Omni: 118</i></div>`)[0];
+                popup_44d89acfd0c74ccb90976dccc1220e52.setContent(html_d291bf0841834d09bf085766b091b065);
+            
+
+            marker_04caa464b1224774aaebbff99b1b917b.bindPopup(popup_44d89acfd0c74ccb90976dccc1220e52)
+            ;
+
+            
+        
+    
+        marker_04caa464b1224774aaebbff99b1b917b.bindTooltip(
+            `<div>`
+            + `Eric Canales` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_577c433ee64340b89deda2e3fa42c4e4 = L.marker(
+            [-1.55, -80.40333],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_7eb0c2728b1f4e19ac0005f1b047d701);
+        
+    
+
+                var custom_icon_34b1fa2b40e54c518f1a95090009f8db = L.icon({
+                    iconUrl: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/153/rose_1f339.png',
+                    iconSize: [38,38],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_577c433ee64340b89deda2e3fa42c4e4.setIcon(custom_icon_34b1fa2b40e54c518f1a95090009f8db);
+            
+    
+            var popup_ddd4cb3b76c24c7d9e55e9494cafb116 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_2cf20fd693f54f0d866d67a14c0722b2 = $(`<div id="html_2cf20fd693f54f0d866d67a14c0722b2" style="width: 100.0%; height: 100.0%;"><b>Becky Sokolow</b><p>Paján, Manabí</p><i>Omni: 121</i></div>`)[0];
+                popup_ddd4cb3b76c24c7d9e55e9494cafb116.setContent(html_2cf20fd693f54f0d866d67a14c0722b2);
+            
+
+            marker_577c433ee64340b89deda2e3fa42c4e4.bindPopup(popup_ddd4cb3b76c24c7d9e55e9494cafb116)
+            ;
+
+            
+        
+    
+        marker_577c433ee64340b89deda2e3fa42c4e4.bindTooltip(
+            `<div>`
+            + `Becky Sokolow` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_1a0525af0d1f433da1000e1b830ccac3 = L.marker(
+            [-1.58176, -80.39661],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_7eb0c2728b1f4e19ac0005f1b047d701);
+        
+    
+
+                var custom_icon_ec994f9b9c2447e785c33e86ff7f6988 = L.icon({
+                    iconUrl: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/153/rose_1f339.png',
+                    iconSize: [38,38],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_1a0525af0d1f433da1000e1b830ccac3.setIcon(custom_icon_ec994f9b9c2447e785c33e86ff7f6988);
+            
+    
+            var popup_3099049ed99b4569a15fb0c9bd3a8855 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f0c2aad4422745988000ad93c478fd16 = $(`<div id="html_f0c2aad4422745988000ad93c478fd16" style="width: 100.0%; height: 100.0%;"><b>Ivonne Headley</b><p>Camposano, Manabi</p><i>Omni: 120</i></div>`)[0];
+                popup_3099049ed99b4569a15fb0c9bd3a8855.setContent(html_f0c2aad4422745988000ad93c478fd16);
+            
+
+            marker_1a0525af0d1f433da1000e1b830ccac3.bindPopup(popup_3099049ed99b4569a15fb0c9bd3a8855)
+            ;
+
+            
+        
+    
+        marker_1a0525af0d1f433da1000e1b830ccac3.bindTooltip(
+            `<div>`
+            + `Ivonne Headley` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_fd2c5da6645e4813965a582525bfe651 = L.marker(
+            [-2.19616, -79.79621],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_7eb0c2728b1f4e19ac0005f1b047d701);
+        
+    
+
+                var custom_icon_3f22a15994b441c4a6f67e6252bafe5d = L.icon({
+                    iconUrl: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/153/rose_1f339.png',
+                    iconSize: [38,38],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_fd2c5da6645e4813965a582525bfe651.setIcon(custom_icon_3f22a15994b441c4a6f67e6252bafe5d);
+            
+    
+            var popup_eac1f93a677447d7bd2192fa36482a24 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_29e68201e7174520b364734a90f10d0f = $(`<div id="html_29e68201e7174520b364734a90f10d0f" style="width: 100.0%; height: 100.0%;"><b>Monica Munoz</b><p>Guayaquil, Guayas</p><i>Omni: 118</i></div>`)[0];
+                popup_eac1f93a677447d7bd2192fa36482a24.setContent(html_29e68201e7174520b364734a90f10d0f);
+            
+
+            marker_fd2c5da6645e4813965a582525bfe651.bindPopup(popup_eac1f93a677447d7bd2192fa36482a24)
+            ;
+
+            
+        
+    
+        marker_fd2c5da6645e4813965a582525bfe651.bindTooltip(
+            `<div>`
+            + `Monica Munoz` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_a55903f0610849d8b1ceeeba8913d83d = L.marker(
+            [-3.25861, -79.87053],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_7eb0c2728b1f4e19ac0005f1b047d701);
+        
+    
+
+                var custom_icon_49b1731fb1184b4991e9d5c534ce6c32 = L.icon({
+                    iconUrl: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/153/rose_1f339.png',
+                    iconSize: [38,38],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_a55903f0610849d8b1ceeeba8913d83d.setIcon(custom_icon_49b1731fb1184b4991e9d5c534ce6c32);
+            
+    
+            var popup_c79392ecf66149cfa4a36d8276084b11 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7c1a2aac409f452a8687bb26c48d6c12 = $(`<div id="html_7c1a2aac409f452a8687bb26c48d6c12" style="width: 100.0%; height: 100.0%;"><b>Jonathan Torres Rentas</b><p>Machala, El Oro</p><i>Omni: 120</i></div>`)[0];
+                popup_c79392ecf66149cfa4a36d8276084b11.setContent(html_7c1a2aac409f452a8687bb26c48d6c12);
+            
+
+            marker_a55903f0610849d8b1ceeeba8913d83d.bindPopup(popup_c79392ecf66149cfa4a36d8276084b11)
+            ;
+
+            
+        
+    
+        marker_a55903f0610849d8b1ceeeba8913d83d.bindTooltip(
+            `<div>`
+            + `Jonathan Torres Rentas` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_f8b73fc3d72145768f5499828b53cf53 = L.marker(
+            [-3.99313, -79.20422],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_7eb0c2728b1f4e19ac0005f1b047d701);
+        
+    
+
+                var custom_icon_f99de33743da48e5b40bcd5be519e8ca = L.icon({
+                    iconUrl: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/153/slightly-smiling-face_1f642.png',
+                    iconSize: [28,28],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_f8b73fc3d72145768f5499828b53cf53.setIcon(custom_icon_f99de33743da48e5b40bcd5be519e8ca);
+            
+    
+            var popup_dba43693ad2a4f9bb968e0958b4a1b13 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6ba2d2e1f05a4b6b94fe5a4f8a525c37 = $(`<div id="html_6ba2d2e1f05a4b6b94fe5a4f8a525c37" style="width: 100.0%; height: 100.0%;"><b>Amy Runkle</b><p>Loja, Loja</p><i>Omni: 118</i></div>`)[0];
+                popup_dba43693ad2a4f9bb968e0958b4a1b13.setContent(html_6ba2d2e1f05a4b6b94fe5a4f8a525c37);
+            
+
+            marker_f8b73fc3d72145768f5499828b53cf53.bindPopup(popup_dba43693ad2a4f9bb968e0958b4a1b13)
+            ;
+
+            
+        
+    
+        marker_f8b73fc3d72145768f5499828b53cf53.bindTooltip(
+            `<div>`
+            + `Amy Runkle` + `</div>`,
+            {"sticky": true}
+        );
+        
+</script>

@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block style %}
+<link href="{{ url_for('static', filename='css/map_style.css') }}" rel="stylesheet">
+{% endblock style %}
+{% block header %}
+<header class="masthead mb-auto">
+    <div class="inner">
+        <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+            <a class="nav-link active" href="{{ url_for('maps') }}">F.R.E.E. Map</a>
+            <a class="nav-link" href="{{ url_for('materials') }}">Materials</a>
+            <a class="nav-link" href="{{ url_for('agenda') }}">Agenda</a>
+        </nav>
+    </div>
+</header>
+{% endblock header %}
+{% block content %}
+<main role="main" class="inner cover mt-3">
+    <h3 class="cover-heading"><b>Who's coming to F.R.E.E.?</b></h3>
+</main>
+{% include "Free_map.html" ignore missing without context %}
+{% endblock content %}

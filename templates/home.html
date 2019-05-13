@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+{% block style %}
+<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+{% endblock style %}
+{% block header %}
+<header class="masthead mb-auto">
+    <div class="inner">
+        <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link active" href="{{ url_for('home') }}">Home</a>
+            <a class="nav-link" href="{{ url_for('maps') }}">F.R.E.E. Map</a>
+            <a class="nav-link" href="{{ url_for('materials') }}">Materials</a>
+            <a class="nav-link" href="{{ url_for('agenda') }}">Agenda</a>
+        </nav>
+    </div>
+</header>
+{% endblock header %}
+{% block content %}
+<main role="main" class="inner cover">
+    <h1 class="cover-heading"><b>F.R.E.E. JULY 2019.</b></h1>
+        <div class="container mt-3">
+            <b>SITE</b> <br/> Quito <i class="em em-cityscape"></i>
+        </div>
+        <div class="container mt-3">
+            <b>DATE</b> <br/>July 19th-21st 2019 <i class="em em-hourglass_flowing_sand"></i>
+        </div>
+        <div class="container m-3">
+            <b>YOUR FACILITATORS<br/></b>
+            <div class="btn-group">
+                <a target="_blank" href="{{ url_for('myspace_arielle') }}" type="button" class="btn btn-primary">Arielle
+                    Hernandez<br/><img
+                            src="{{url_for('static', filename='merperson_emoji-mermaid.png')}}" width="50"/></a>
+                <a class="btn btn-primary mt-2" type="button"> <i class="fas fa-plus"></i> </a>
+                <a target="_blank" href="{{ url_for('myspace_stephanie') }}" type="button" class="btn btn-primary"
+                   style="text-color: #white">Stephanie Fuentes<br/><img
+                        src="{{url_for('static', filename='fairy_emoji-fairy.png')}}" width="50"/></a>
+            </div>
+        </div>
+    <div class="container">
+        <a target="_blank" href="https://www.facebook.com/groups/404969296191808/permalink/2330444106977641/"
+           class="btn btn-secondary mt-2">RSVP on <i class="fab fa-facebook"></i></a>
+        <a target="_blank" href="#" class="btn btn-secondary mt-2">Contact us <i class="far fa-envelope"></i></a>
+    </div>
+    <div class="container mt-2">
+        <a href="{{ url_for('materials') }}" class="btn btn-lg btn-secondary">Get the Book <i
+                class="fas fa-book"></i></i></a>
+    </div>
+</main>
+{% endblock content %}

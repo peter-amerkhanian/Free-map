@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+{% block style %}
+<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+{% endblock style %}
+{% block header %}
+<header class="masthead mb-auto">
+    <div class="inner">
+        <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+            <a class="nav-link" href="{{ url_for('maps') }}">F.R.E.E. Map</a>
+            <a class="nav-link active" href="{{ url_for('materials') }}">Materials</a>
+            <a class="nav-link" href="{{ url_for('agenda') }}">Agenda</a>
+        </nav>
+    </div>
+</header>
+{% endblock header %}
+{% block content %}
+<main role="main" class="inner cover">
+    <h1 class="cover-heading"><b>Materials</b></h1>
+<div class="container">
+    <p class="lead">
+    <p>Hello FREE,</p>
+    <p>
+        Here's the <a
+            href="https://drive.google.com/drive/folders/1ECGd8T7M6Gr3Is3GL94Ozip2wNg0FvHY?usp=sharing&fbclid=IwAR2l9lhzU5RPlPsFKmJckdrvJO9PormQcjpLx4oHVA2NUx-nrU1D5VJx15Y"
+            class="btn btn-secondary">FREE Google Drive folder</a>
+        where you will find:
+    </p>
+    <div class="btn-group-vertical">
+        <a href="https://drive.google.com/open?id=1SYyaanESOzKUhJyYJK7aOi8KZAIFQnmE" type="button"
+           class="btn btn-secondary mb-1"> <b>Becoming</b> by Michelle Obama (ePub) </a>
+        <a href="https://drive.google.com/open?id=138awRQ_GxEPviDgqttx10LeiqSZBzSNK" type="button"
+           class="btn btn-secondary mb-1"> Audiobook of <b>Becoming</b> </a>
+        <a href="https://drive.google.com/open?id=1qhWJPb1Tc2vP-TZV6VgNVCLZUi3iPiKP"
+           type="button" class="btn btn-secondary mb-1"> “Isabel Wilkerson on Michelle Obama’s ‘Becoming’ and the Great
+            Migration” <br/>— The New York Times (pdf) </a>
+        <a href="https://drive.google.com/open?id=1AUScGTRlt9m8NKBdzc0ITBu4nQcMsEA8" type="button"
+           class="btn btn-secondary mb-1"> “Michelle Obama and Tracee Ellis Ross on the Power of Women’s Stories” <br/>—
+            The New York Times (pdf) </a>
+        <a href="https://www.nytimes.com/2019/02/14/podcasts/still-processing-becoming-michelle-obama.html" type="button"
+           class="btn btn-secondary mb-1"> Link to Podcast <b>Still Processing</b> Episode on <b>Becoming</b> (44
+            min)</a>
+    </div>
+<p>
+Please feel free to pick and choose from any of the above resources. If you don’t have time to read the whole book, you can read an article or listen to a podcast, or even do both. It’s up to you!
+
+— Arielle H.
+    </p>
+    </div>
+  </main>
+{% endblock content %}
