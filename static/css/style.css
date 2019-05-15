@@ -28,6 +28,11 @@ a:hover {
   border: .05rem solid #58d68d;
 }
 */
+/* a little padding eliminator class */
+.padding-0{
+    padding-right:0;
+    padding-left:0;
+}
 
 
 /*
