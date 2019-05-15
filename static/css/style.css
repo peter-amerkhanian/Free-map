@@ -43,7 +43,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   color:  #0b3954;
-  text-shadow: 0 .02rem .1rem  #bfd7ea;
+  text-shadow: none;
 }
 
 .cover-container {
