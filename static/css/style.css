@@ -1,7 +1,7 @@
 /*
  * Globals
  */
-bfd7ea
+faf6e6
 /* Links */
 a,
 a:focus,
@@ -15,8 +15,8 @@ a:hover {
 .btn-secondary:focus {
   color: #0b3954;
   text-shadow: none; /* Prevent inheritance from `body` */
-  background-color:    #ff6663;
-  border: .05rem solid   #ff6663;
+  background-color:    #dd6e42;
+  border: .05rem solid   #dd6e42;
 }
 
 .btn-primary,
@@ -24,8 +24,8 @@ a:hover {
 .btn-primary:focus {
   color:  #0b3954;
   text-shadow: none; /* Prevent inheritance from `body` */
-  background-color:  #bfd7ea;
-  border: .05rem solid #bfd7ea;
+  background-color:  #dd6e42;
+  border: .05rem solid #dd6e42;
 }
 
 
@@ -36,7 +36,8 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #bfd7ea;
+  /*background-color: #faf6e6; */
+  background: linear-gradient(45deg, #4f6d7a, #c0d6df);
 }
 
 body {
