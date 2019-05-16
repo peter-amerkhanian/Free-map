@@ -60,6 +60,12 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* kill padding */
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
 .cover-container {
   max-width: 42em;
 }
