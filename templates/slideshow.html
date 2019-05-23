@@ -1,0 +1,149 @@
+<!-- 119 - 570-->
+<!-- 118 - 585-->
+<!-- 121 - 80-->
+<!-- 120 - 110-->
+{% extends "layout.html" %}
+{% block style %}
+<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+<!--<link href="{{ url_for('static', filename='css/graph.css') }}" rel="stylesheet">-->
+<script type="text/javascript" src="http://kozea.github.com/pygal.js/latest/pygal-tooltips.min.js"></script>
+{% endblock style %}
+{% block header %}
+<header class="masthead mb-auto">
+    <div class="inner">
+        <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link" href="{{ url_for('home') }}"><i class="fas fa-home"></i></a>
+            <a class="nav-link" href="{{ url_for('maps') }}">Map</a>
+            <a class="nav-link" href="{{ url_for('materials') }}">Materials</a>
+            <a class="nav-link" href="{{ url_for('agenda') }}">Agenda</a>
+        </nav>
+    </div>
+</header>
+{% endblock header %}
+{% block content %}
+<main role="main" class="inner cover">
+    <?xml version=\'1.0\' encoding=\'utf-8\'?>
+    <?xml-stylesheet href="https://fonts.googleapis.com/css?family=Poppins"?>
+    <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="pygal-chart" id="chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a"
+         viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+        <!--Generated with pygal 2.4.0 (etree) \xc2\xa9Kozea 2012-2016 on 2019-05-23--><!--http://pygal.org-->
+        <!--http://github.com/Kozea/pygal-->
+        <defs>
+            <style type="text/css">
+                #chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a{-webkit-user-select:none;-webkit-font-smoothing:antialiased;font-family:Poppins}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .title{font-family:Poppins;font-size:40px}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .legends .legend text{font-family:Poppins;font-size:20px}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .axis text{font-family:Poppins;font-size:10px}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .axis text.major{font-family:Poppins;font-size:10px}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .text-overlay text.value{font-family:Poppins;font-size:16px}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .text-overlay text.label{font-family:Poppins;font-size:24px}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .tooltip{font-family:Poppins;font-size:14px}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a text.no_data{font-family:Poppins;font-size:64px}\n#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a{background-color:transparent}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a path,#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a line,#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a rect,#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a circle{-webkit-transition:100ms ease-in;-moz-transition:100ms ease-in;transition:100ms ease-in}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .graph &gt; .background{fill:transparent}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .plot &gt; .background{fill:transparent}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .graph{fill:rgba(0,0,0,.87)}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a text.no_data{fill:rgba(0,0,0,1)}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .title{fill:rgba(0,0,0,1)}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .legends .legend text{fill:rgba(0,0,0,.87)}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .legends .legend:hover text{fill:rgba(0,0,0,1)}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .axis .line{stroke:rgba(0,0,0,1)}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .axis .guide.line{stroke:rgba(0,0,0,.54)}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .axis .major.line{stroke:rgba(0,0,0,.87)}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .axis text.major{fill:rgba(0,0,0,1)}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .axis.y .guides:hover .guide.line,#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .line-graph .axis.x .guides:hover .guide.line,#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .stackedline-graph .axis.x .guides:hover .guide.line,#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .xy-graph .axis.x .guides:hover .guide.line{stroke:rgba(0,0,0,1)}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .axis .guides:hover text{fill:rgba(0,0,0,1)}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .reactive{fill-opacity:.6;stroke-opacity:.8}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .ci{stroke:rgba(0,0,0,.87)}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .reactive.active,#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .active .reactive{fill-opacity:.9;stroke-opacity:.9;stroke-width:4}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .ci .reactive.active{stroke-width:1.5}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .series text{fill:rgba(0,0,0,1)}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .tooltip rect{fill:transparent;stroke:rgba(0,0,0,1);-webkit-transition:opacity 100ms ease-in;-moz-transition:opacity 100ms ease-in;transition:opacity 100ms ease-in}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .tooltip .label{fill:rgba(0,0,0,.87)}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .tooltip .label{fill:rgba(0,0,0,.87)}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .tooltip .legend{font-size:.8em;fill:rgba(0,0,0,.54)}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .tooltip .x_label{font-size:.6em;fill:rgba(0,0,0,1)}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .tooltip .xlink{font-size:.5em;text-decoration:underline}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .tooltip .value{font-size:1.5em}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .bound{font-size:.5em}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .max-value{font-size:.75em;fill:rgba(0,0,0,.54)}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .map-element{fill:transparent;stroke:rgba(0,0,0,.54) !important}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .map-element .reactive{fill-opacity:inherit;stroke-opacity:inherit}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .color-0,#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .color-0 a:visited{stroke:#563936;fill:#563936}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .color-1,#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .color-1 a:visited{stroke:#9e6964;fill:#9e6964}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .color-2,#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .color-2 a:visited{stroke:#bc9894;fill:#bc9894}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .color-3,#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .color-3 a:visited{stroke:#d3bbb8;fill:#d3bbb8}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .text-overlay .color-0 text{fill:black}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .text-overlay .color-1 text{fill:black}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .text-overlay .color-2 text{fill:black}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .text-overlay .color-3 text{fill:black}\n#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a text.no_data{text-anchor:middle}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .guide.line{fill:none}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .centered{text-anchor:middle}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .title{text-anchor:middle}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .legends .legend text{fill-opacity:1}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .axis.x text{text-anchor:middle}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .axis.x:not(.web) text[transform]{text-anchor:start}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .axis.x:not(.web) text[transform].backwards{text-anchor:end}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .axis.y text{text-anchor:end}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .axis.y text[transform].backwards{text-anchor:start}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .axis.y2 text{text-anchor:start}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .axis.y2 text[transform].backwards{text-anchor:end}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .axis .guide.line{stroke-dasharray:4,4}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .axis .major.guide.line{stroke-dasharray:6,6}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .horizontal .axis.y .guide.line,#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .horizontal .axis.y2 .guide.line,#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .vertical .axis.x .guide.line{opacity:0}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .horizontal .axis.always_show .guide.line,#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .vertical .axis.always_show .guide.line{opacity:1 !important}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .axis.y .guides:hover .guide.line,#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .axis.y2 .guides:hover .guide.line,#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .axis.x .guides:hover .guide.line{opacity:1}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .axis .guides:hover text{opacity:1}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .nofill{fill:none}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .subtle-fill{fill-opacity:.2}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .dot{stroke-width:1px;fill-opacity:1}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .dot.active{stroke-width:5px}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .dot.negative{fill:transparent}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a text,#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a tspan{stroke:none !important}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .series text.active{opacity:1}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .tooltip rect{fill-opacity:.95;stroke-width:.5}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .tooltip text{fill-opacity:1}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .showable{visibility:hidden}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .showable.shown{visibility:visible}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .gauge-background{fill:rgba(229,229,229,1);stroke:none}#chart-a4aa254d-21af-4c75-b484-3eac0ecb5b1a .bg-lines{stroke:transparent;stroke-width:2px}
+            </style>
+            <script type="text/javascript">
+                window.pygal = window.pygal || {};window.pygal.config = window.pygal.config || {};window.pygal.config[\'a4aa254d-21af-4c75-b484-3eac0ecb5b1a\'] = {"allow_interruptions": false, "box_mode": "extremes", "classes": ["pygal-chart"], "css": ["file://style.css", "file://graph.css"], "defs": [], "disable_xml_declaration": false, "dots_size": 2.5, "dynamic_print_values": false, "explicit_size": false, "fill": false, "force_uri_protocol": "https", "formatter": null, "half_pie": false, "height": 600, "include_x_axis": false, "inner_radius": 0.4, "interpolate": null, "interpolation_parameters": {}, "interpolation_precision": 250, "inverse_y_axis": false, "js": ["//kozea.github.io/pygal.js/2.0.x/pygal-tooltips.min.js"], "legend_at_bottom": true, "legend_at_bottom_columns": 2, "legend_box_size": 12, "logarithmic": false, "margin": 20, "margin_bottom": null, "margin_left": null, "margin_right": null, "margin_top": null, "max_scale": 16, "min_scale": 4, "missing_value_fill_truncation": "x", "no_data_text": "No data", "no_prefix": false, "order_min": null, "pretty_print": false, "print_labels": true, "print_values": true, "print_values_position": "center", "print_zeroes": true, "range": null, "rounded_bars": null, "secondary_range": null, "show_dots": true, "show_legend": true, "show_minor_x_labels": true, "show_minor_y_labels": true, "show_only_major_dots": false, "show_x_guides": false, "show_x_labels": true, "show_y_guides": true, "show_y_labels": true, "spacing": 10, "stack_from_top": false, "strict": false, "stroke": true, "stroke_style": null, "style": {"background": "transparent", "ci_colors": [], "colors": ["#563936", "#9e6964", "#bc9894", "#d3bbb8"], "font_family": "Poppins", "foreground": "rgba(0, 0, 0, .87)", "foreground_strong": "rgba(0, 0, 0, 1)", "foreground_subtle": "rgba(0, 0, 0, .54)", "guide_stroke_dasharray": "4,4", "label_font_family": "Poppins", "label_font_size": 10, "legend_font_family": "Poppins", "legend_font_size": 20, "major_guide_stroke_dasharray": "6,6", "major_label_font_family": "Poppins", "major_label_font_size": 10, "no_data_font_family": "Poppins", "no_data_font_size": 64, "opacity": ".6", "opacity_hover": ".9", "plot_background": "transparent", "stroke_opacity": ".8", "stroke_opacity_hover": ".9", "title_font_family": "Poppins", "title_font_size": 40, "tooltip_font_family": "Poppins", "tooltip_font_size": 14, "transition": "100ms ease-in", "value_background": "rgba(229, 229, 229, 1)", "value_colors": [], "value_font_family": "Poppins", "value_font_size": 16, "value_label_font_family": "Poppins", "value_label_font_size": 24}, "title": "RSVPs by Omni", "tooltip_border_radius": 0, "tooltip_fancy_mode": true, "truncate_label": null, "truncate_legend": null, "width": 800, "x_label_rotation": 0, "x_labels": null, "x_labels_major": null, "x_labels_major_count": null, "x_labels_major_every": null, "x_title": null, "xrange": null, "y_label_rotation": 0, "y_labels": null, "y_labels_major": null, "y_labels_major_count": null, "y_labels_major_every": null, "y_title": null, "zero": 0, "legends": ["Omni 119", "Omni 118", "Omni 121", "Omni 120"]}
+            </script>
+            <script type="text/javascript" xlink:href="https://kozea.github.io/pygal.js/2.0.x/pygal-tooltips.min.js"/>
+        </defs>
+        <title>RSVPs by Omni</title>
+        <g class="graph pie-graph vertical">
+            <rect class="background" height="600" width="800" x="0" y="0"/>
+            <g class="plot" transform="translate(20, 70)">
+                <rect class="background" height="450.0" width="760" x="0" y="0"/>
+                <g class="series serie-0 color-0">
+                    <g class="slices">
+                        <g class="slice">
+                            <desc class="label">Omni 119</desc>
+                            <path class="slice reactive tooltip-trigger"
+                                  d="M380.000000 22.500000 A202.500000 202.500000 0 0 1 581.636171 243.684343 L469.616076 233.304152 A90.000000 90.000000 0 0 0 380.000000 135.000000 z"/>
+                            <desc class="value">26%</desc>
+                            <desc class="x centered">488.0800541435214</desc>
+                            <desc class="y centered">126.472012116691</desc>
+                        </g>
+                    </g>
+                </g>
+                <g class="series serie-1 color-1">
+                    <g class="slices">
+                        <g class="slice">
+                            <desc class="label">Omni 118</desc>
+                            <path class="slice reactive tooltip-trigger"
+                                  d="M581.636171 243.684343 A202.500000 202.500000 0 0 1 417.209277 424.052053 L396.537457 313.467579 A90.000000 90.000000 0 0 0 469.616076 233.304152 z"/>
+                            <desc class="value">21%</desc>
+                            <desc class="x centered">488.08005414352147</desc>
+                            <desc class="y centered">323.5279878833089</desc>
+                        </g>
+                    </g>
+                </g>
+                <g class="series serie-2 color-2">
+                    <g class="slices">
+                        <g class="slice">
+                            <desc class="label">Omni 121</desc>
+                            <path class="slice reactive tooltip-trigger"
+                                  d="M417.209277 424.052053 A202.500000 202.500000 0 0 1 185.230307 169.583245 L293.435692 200.370331 A90.000000 90.000000 0 0 0 396.537457 313.467579 z"/>
+                            <desc class="value">32%</desc>
+                            <desc class="x centered">271.91994585647865</desc>
+                            <desc class="y centered">323.52798788330904</desc>
+                        </g>
+                    </g>
+                </g>
+                <g class="series serie-3 color-3">
+                    <g class="slices">
+                        <g class="slice">
+                            <desc class="label">Omni 120</desc>
+                            <path class="slice reactive tooltip-trigger"
+                                  d="M185.230307 169.583245 A202.500000 202.500000 0 0 1 380.000000 22.500000 L380.000000 135.000000 A90.000000 90.000000 0 0 0 293.435692 200.370331 z"/>
+                            <desc class="value">21%</desc>
+                            <desc class="x centered">291.8646844295337</desc>
+                            <desc class="y centered">108.289980510265</desc>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g class="titles">
+                <text class="title plot_title" x="400.0" y="50">RSVPs by Omni</text>
+            </g>
+            <g class="plot overlay" transform="translate(20, 70)">
+                <g class="series serie-0 color-0"/>
+                <g class="series serie-1 color-1"/>
+                <g class="series serie-2 color-2"/>
+                <g class="series serie-3 color-3"/>
+            </g>
+            <g class="plot text-overlay" transform="translate(20, 70)">
+                <g class="series serie-0 color-0">
+                    <text class="label" x="488.0800541435214" y="123.80534545002433">Omni 119</text>
+                    <text class="value" text-anchor="left" x="488.0800541435214" y="139.80534545002436">26%</text>
+                </g>
+                <g class="series serie-1 color-1">
+                    <text class="label" x="488.08005414352147" y="320.86132121664224">Omni 118</text>
+                    <text class="value" text-anchor="left" x="488.08005414352147" y="336.86132121664224">21%</text>
+                </g>
+                <g class="series serie-2 color-2">
+                    <text class="label" x="271.91994585647865" y="320.86132121664235">Omni 121</text>
+                    <text class="value" text-anchor="left" x="271.91994585647865" y="336.86132121664235">32%</text>
+                </g>
+                <g class="series serie-3 color-3">
+                    <text class="label" x="291.8646844295337" y="105.62331384359832">Omni 120</text>
+                    <text class="value" text-anchor="left" x="291.8646844295337" y="121.62331384359832">21%</text>
+                </g>
+            </g>
+            <g class="plot tooltip-overlay" transform="translate(20, 70)">
+                <g class="tooltip" style="opacity: 0" transform="translate(0 0)">
+                    <rect class="tooltip-box" height="0" rx="0" ry="0" width="0"/>
+                    <g class="text"/>
+                </g>
+            </g>
+            <g class="legends" transform="translate(270, 530)">
+                <g class="legend reactive activate-serie" id="activate-serie-0">
+                    <rect class="color-0 reactive" height="12" width="12" x="0.0" y="4.0"/>
+                    <text x="17.0" y="16.0">Omni 119</text>
+                </g>
+                <g class="legend reactive activate-serie" id="activate-serie-1">
+                    <rect class="color-1 reactive" height="12" width="12" x="160.0" y="4.0"/>
+                    <text x="177.0" y="16.0">Omni 118</text>
+                </g>
+                <g class="legend reactive activate-serie" id="activate-serie-2">
+                    <rect class="color-2 reactive" height="12" width="12" x="0.0" y="34.0"/>
+                    <text x="17.0" y="46.0">Omni 121</text>
+                </g>
+                <g class="legend reactive activate-serie" id="activate-serie-3">
+                    <rect class="color-3 reactive" height="12" width="12" x="160.0" y="34.0"/>
+                    <text x="177.0" y="46.0">Omni 120</text>
+                </g>
+            </g>
+        </g>
+    </svg>
+
+</main>
+{% endblock content %}
