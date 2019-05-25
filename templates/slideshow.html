@@ -22,11 +22,17 @@
 {% block content %}
 <main role="main">
     <h1 class="cover-heading mt-5"><b>Demography</i> </b></h1>
+    <hr class="my-4">
+    <p>RSVPs by Omni.</p>
     <figure>
-      <embed type="image/svg+xml" src="{{url_for('static', filename='chart_bar.svg')}}">
+        <embed type="image/svg+xml" src="{{url_for('static', filename='chart_bar.svg')}}">
     </figure>
-    <figure class="mt-5">
-      <embed type="image/svg+xml" src="{{url_for('static', filename='pie_demography.svg')}}">
+    <hr class="my-4">
+    <p>RSVPs by Region and by Province.</p>
+    <figure>
+        <embed type="image/svg+xml" src="{{url_for('static', filename='pie_demography.svg')}}">
     </figure>
+    <hr class="my-4">
+
 </main>
 {% endblock content %}
