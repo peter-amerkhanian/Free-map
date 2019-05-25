@@ -21,12 +21,12 @@
 {% endblock header %}
 {% block content %}
 <main role="main">
-
-    <!--<figure>-->
-      <!--<embed type="image/svg+xml" src="{{url_for('static', filename='pie_chart.svg')}}">-->
-    <!--</figure>-->
+    <h1 class="cover-heading mt-5"><b>Demography</i> </b></h1>
     <figure>
       <embed type="image/svg+xml" src="{{url_for('static', filename='chart_bar.svg')}}">
+    </figure>
+    <figure class="mt-5">
+      <embed type="image/svg+xml" src="{{url_for('static', filename='pie_demography.svg')}}">
     </figure>
 </main>
 {% endblock content %}
