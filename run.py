@@ -35,10 +35,13 @@ def myspace_stephanie():
 def contact_page():
     return render_template("contact_page.html")
 
-@app.route('/slide')
-def slideshow():
-    return render_template("slideshow.html")
+@app.route('/omnis')
+def omni():
+    return render_template("graphics_omni.html")
 
+@app.route('/regions')
+def region():
+    return render_template("graphics_region.html")
 
 if __name__ == "__main__":
     app.run(debug=True)

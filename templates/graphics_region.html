@@ -1,6 +1,7 @@
 {% extends "layout.html" %}
 {% block style %}
 <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+<script type="text/javascript" src="http://kozea.github.com/pygal.js/latest/pygal-tooltips.min.js"></script>
 {% endblock style %}
 {% block header %}
 <header class="masthead mb-auto">
@@ -8,7 +9,7 @@
         <nav class="nav nav-masthead justify-content-center">
             <a class="nav-link" href="{{ url_for('home') }}"><i class="fas fa-home"></i></a>
             <a class="nav-link active" href="{{ url_for('maps') }}">GFX</a>
-            <a class="nav-link" href="{{ url_for('materials') }}">Material</a>
+            <a class="nav-link" href="{{ url_for('materials') }}">Materials</a>
             <a class="nav-link" href="{{ url_for('agenda') }}">Agenda</a>
         </nav>
     </div>
@@ -16,13 +17,16 @@
 {% endblock header %}
 {% block content %}
 <main role="main" class="inner cover mt-3">
-        <h3 class="cover-heading"><b>Who's coming to F.R.E.E.?</b></h3>
+    <h3 class="cover-heading"><b>Who's coming to F.R.E.E.?</b></h3>
     <nav class="nav justify-content-center">
-            <a class="nav-link disabled" href="{{ url_for('maps') }}"><i class="fas fa-map-marked-alt"></i></a>
+            <a class="nav-link" href="{{ url_for('maps') }}"><i class="fas fa-map-marked-alt"></i></a>
             <a class="nav-link" href="{{ url_for('omni') }}">Omnis</a>
-            <a class="nav-link" href="{{ url_for('region') }}">Regions</a>
+            <a class="nav-link disabled" href="{{ url_for('region') }}">Regions</a>
         </nav>
-    <hr class="my-4">
+            <hr class="my-4">
+
+    <figure>
+        <embed type="image/svg+xml" src="{{url_for('static', filename='pie_demography.svg')}}" width="515">
+    </figure>
 </main>
-{% include "Free_map_open_city.html" ignore missing without context %}
 {% endblock content %}
