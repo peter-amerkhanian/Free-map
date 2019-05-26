@@ -24,8 +24,8 @@
             <a class="nav-link" href="{{ url_for('region') }}">Regions</a>
         </nav>
             <hr class="my-4">
-    <figure>
-        <embed type="image/svg+xml" src="{{url_for('static', filename='chart_bar.svg')}}" width="515">
-    </figure>
+    <div class="container" width="auto">
+        <embed type="image/svg+xml" src="{{url_for('static', filename='chart_bar.svg')}}">
+    </div>
 </main>
 {% endblock content %}
