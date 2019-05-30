@@ -9,7 +9,10 @@ a:hover {
   color:  #fdfefe;
   text-decoration: none;
 }
-
+/* Lists */
+.list-group-item {
+background-color: transparent
+}
 /* Custom default button */
 .btn-secondary,
 .btn-secondary:hover,
