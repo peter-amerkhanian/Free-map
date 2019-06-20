@@ -11,6 +11,10 @@ def home():
 def maps():
     return render_template("map_page.html")
 
+@app.route('/maps-plain')
+def plain_map():
+    return render_template("Free_map_open_city.html")
+
 
 @app.route('/agenda')
 def agenda():

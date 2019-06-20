@@ -8,7 +8,7 @@
         <nav class="nav nav-masthead justify-content-center">
             <a class="nav-link" href="{{ url_for('home') }}"><i class="fas fa-home"></i></a>
             <a class="nav-link active" href="{{ url_for('maps') }}">gfx</a>
-            <a class="nav-link" href="{{ url_for('materials') }}">Material</a>
+            <a class="nav-link" href="{{ url_for('materials') }}">Materials</a>
             <a class="nav-link" href="{{ url_for('agenda') }}">Agenda</a>
         </nav>
     </div>
@@ -22,7 +22,8 @@
             <a class="nav-link" href="{{ url_for('omni') }}">Omnis</a>
             <a class="nav-link" href="{{ url_for('region') }}">Regions</a>
         </nav>
-    <hr class="my-4">
+    <hr class="mt-4">
 </main>
 {% include "Free_map_open_city.html" ignore missing without context %}
+<a class="mb-1" href="{{ url_for('plain_map') }}"><small><i class="fas fa-search-plus"></i></small></a>
 {% endblock content %}
