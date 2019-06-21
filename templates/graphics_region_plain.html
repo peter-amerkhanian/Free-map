@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width,
         initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -24,21 +25,13 @@
         }
       }
     </style>
-    {% block style %}
-    {% endblock style %}
-</head>
 <body class="text-center">
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-    {% block header %}
-    {% endblock header %}
-    {% block content %}
-    {% endblock content %}
-    <footer class="mastfoot mt-auto">
-        <div class="inner">
-            <small style="font-size:12px;">Stay <a target="_blank" href="https://www.facebook.com/groups/404969296191808/"><b>FREE</b></a></small>
-        </div>
-    </footer>
-
+    <div class="container mt-5" style="width:100%;">
+        <embed type="image/svg+xml" src="{{url_for('static', filename='pie_demography.svg')}}">
+    </div>
+    <a href="{{ url_for('region') }}" class="m-3">
+        <h3><i class="far fa-arrow-alt-circle-left"></i></h3>
+    </a>
 </div>
 </body>
-</html>

@@ -43,9 +43,19 @@ def contact_page():
 def omni():
     return render_template("graphics_omni.html")
 
+@app.route('/omnis-plain')
+def plain_omni_graphic():
+    return render_template("graphics_omni_plain.html")
+
 @app.route('/regions')
 def region():
     return render_template("graphics_region.html")
+
+
+@app.route('/regions-plain')
+def plain_region_graphic():
+    return render_template("graphics_region_plain.html")
+
 
 if __name__ == "__main__":
     app.run(debug=True)

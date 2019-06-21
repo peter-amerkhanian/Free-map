@@ -8,7 +8,7 @@
     <div class="inner">
         <nav class="nav nav-masthead justify-content-center">
             <a class="nav-link" href="{{ url_for('home') }}"><i class="fas fa-home"></i></a>
-            <a class="nav-link active" href="{{ url_for('maps') }}">gfx</a>
+            <a class="nav-link active" href="{{ url_for('maps') }}">GFX</a>
             <a class="nav-link" href="{{ url_for('materials') }}">Materials</a>
             <a class="nav-link" href="{{ url_for('agenda') }}">Agenda</a>
         </nav>
@@ -23,9 +23,10 @@
             <a class="nav-link disabled" href="{{ url_for('omni') }}">Omnis</a>
             <a class="nav-link" href="{{ url_for('region') }}">Regions</a>
         </nav>
-            <hr class="my-4">
+            <hr class="mt-1">
     <div class="container" width="auto">
         <embed type="image/svg+xml" src="{{url_for('static', filename='chart_bar.svg')}}">
     </div>
+    <a class="mb-1" href="{{ url_for('plain_omni_graphic') }}"><i class="fas fa-search-plus"></i></a>
 </main>
 {% endblock content %}
