@@ -4,10 +4,14 @@
  @import url('https://fonts.googleapis.com/css?family=Poppins');
 /* Links */
 a,
-a:focus,
 a:hover {
   color:  #fdfefe;
   text-decoration: none;
+}
+a:focus,
+a:active {
+    color: #ffffff !important;
+    background-color: #ffffff !important;
 }
 /* Lists */
 .list-group-item {
@@ -22,16 +26,22 @@ background-color: transparent
   background-color: #563936;
   border: .05rem solid  #563936 ;
 }
-/*
+
 .btn-primary,
-.btn-primary:hover,
 .btn-primary:focus {
-  color:  #6f93a1;
-  text-shadow: none; *//* Prevent inheritance from `body` *//*
-  background-color:  #58d68d;
-  border: .05rem solid #58d68d;
+  color:  #ffffff;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color:  transparent;
+  border: .3rem solid #ffffff;
 }
-*/
+.btn-primary:hover{
+  color: #ffffff;
+  background-color:  #563936;
+  border-color: #ffffff;
+  text-decoration: none;
+  text-shadow: none;
+}
+
 /* a little padding eliminator class */
 .padding-0{
     padding-right:0;

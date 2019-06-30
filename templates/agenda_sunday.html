@@ -1,0 +1,36 @@
+{% extends "agenda.html" %}
+{% block day_nav %}
+<a class="btn btn-primary" href="{{ url_for('agenda_friday') }}">Fri</a>
+<a class="btn btn-primary" href="{{ url_for('agenda_saturday') }}">Sat</a>
+<a class="btn btn-secondary disabled" href="#">Sun</a>
+{% endblock day_nav %}
+{% block day_content %}
+<div class="container">
+    <h4 class="mb-3">6/21 @ Hostel 593</h4>
+    <div class="container" style="height: 300px; margin: 0px 0px 0px 0px;">
+        <div class="row no-gutters">
+            <div class="col-5">
+                <p class="text-right">
+                    <small><b>10:00 - 11:00 AM</b></small>
+                </p>
+            </div>
+            <b class="mr-1 ml-1"></b>
+            <div class="col-5">
+                <p class="text-left">Wrap-Up and Check-Out</p>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-5">
+                <p class="text-right">
+                    <small><b></b></small>
+                </p>
+            </div>
+            <b class="mr-1 ml-1"></b>
+            <div class="col-5">
+                <p class="text-left">Appoint next meeting’s facilitators and discuss book options</p>
+                <h1 class="text-left"><i class="far fa-hand-peace"></i></h1>
+            </div>
+        </div>
+    </div>
+        </div>
+        {% endblock day_content %}

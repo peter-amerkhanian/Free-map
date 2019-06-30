@@ -20,6 +20,17 @@ def plain_map():
 def agenda():
     return render_template("agenda.html")
 
+@app.route('/agenda/friday')
+def agenda_friday():
+    return render_template("agenda_friday.html")
+
+@app.route('/agenda/saturday')
+def agenda_saturday():
+    return render_template("agenda_saturday.html")
+
+@app.route('/agenda/sunday')
+def agenda_sunday():
+    return render_template("agenda_sunday.html")
 
 @app.route('/materials')
 def materials():

@@ -1,0 +1,127 @@
+{% extends "agenda.html" %}
+{% block day_nav %}
+<a class="btn btn-primary" href="{{ url_for('agenda_friday') }}">Fri</a>
+<a class="btn btn-secondary disabled" href="#">Sat</a>
+<a class="btn btn-primary" href="{{ url_for('agenda_sunday') }}">Sun</a>
+{% endblock day_nav %}
+{% block day_content %}
+<div class="overflow-auto">
+    <h4 class="mb-3">6/20 @ Peace Corps Office</h4>
+    <div class="container" style="height: 300px; margin: 0px 0px 0px 0px;">
+        <div class="row no-gutters">
+            <div class="col-5">
+                <p class="text-right">
+                    <small><b>10:00 - 10:20 AM</b></small>
+                </p>
+            </div>
+            <b class="mr-1 ml-1"></b>
+            <div class="col-5">
+                <p class="text-left">Morning Energizer </p>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-5">
+                <p class="text-right">
+                    <small><b>10:20 - 10:30 AM</b></small>
+                </p>
+            </div>
+            <b class="mr-1 ml-1"></b>
+            <div class="col-5">
+                <p class="text-left">Review Community Agreements</p>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-5">
+                <p class="text-right">
+                    <small><b>10:30 - 12:30 PM</b></small>
+                </p>
+            </div>
+            <b class="mr-1 ml-1"></b>
+            <div class="col-5">
+                <p class="text-left">Small Group Book Discussion on<br/> Michelle Obama’s Becoming</p>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-5">
+                <p class="text-right">
+                    <small>
+                    <b>12:30 - 2:00 PM</b></small></p>
+            </div>
+            <b class="mr-1 ml-1"></b>
+            <div class="col-5">
+                <p class="text-left">Lunch</p>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-5">
+                <p class="text-right">
+                    <small><b>2:00 - 3:00 PM </b></small>
+                </p>
+            </div>
+            <b class="mr-1 ml-1"></b>
+            <div class="col-5">
+                <p class="text-left">Current Events</p>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-5">
+                <p class="text-right">
+                    <small><b>3:00 - 4:00 PM</b></small>
+                </p>
+            </div>
+            <b class="mr-1 ml-1"></b>
+            <div class="col-5">
+                <p class="text-left">Barrios / Ally-Led <br/>
+                    Simultaneous Sessions</p>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-5">
+                <p class="text-right">
+                    <small><b>Barrios</b></small>
+                </p>
+            </div>
+            <b class="mr-1 ml-1"></b>
+            <div class="col-5">
+                <p class="text-left">Groups organized by region for members to
+                    start thinking how they would organize meetings</p>
+            </div>
+        </div>
+            <div class="row no-gutters">
+                <div class="col-5">
+                    <p class="text-right">
+                        <small><b>Ally-Led</b></small>
+                    </p>
+                </div>
+                <b class="mr-1 ml-1"></b>
+                <div class="col-5">
+                    <p class="text-left">Allies will discuss NBA player
+                        Kyle Korver’s essay “Privileged”</p>
+                </div>
+            </div>
+                <div class="row no-gutters">
+                    <div class="col-5">
+                        <p class="text-right">
+                            <small><b>4:00 - 4:45 PM</b></small>
+                        </p>
+                    </div>
+                    <b class="mr-1 ml-1"></b>
+                    <div class="col-5">
+                        <p class="text-left">118 Panels</p>
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-5">
+                        <p class="text-right">
+                            <small><b>4:45 - 5:00 PM</b></small>
+                        </p>
+                    </div>
+                    <b class="mr-1 ml-1"></b>
+                    <div class="col-5">
+                        <p class="text-left">Closing Words</p>
+                    </div>
+                </div>
+                <h5 class="mb-3"><b>Join us after the meeting to watch <br/>Lion King!</b></h5>
+            </div>
+        </div>
+        {% endblock day_content %}

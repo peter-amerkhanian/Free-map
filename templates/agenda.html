@@ -16,9 +16,22 @@
 {% endblock header %}
 {% block content %}
 <main role="main" class="inner cover">
-    <h1 class="cover-heading"><b>AGENDA</b></h1>
-    <p class="lead">
-        Coming soon <i class="em em-wink"></i>
+    <h2 class="cover-heading m-3"><b>FREE July Summit</b></h2>
+    <div class="btn-group">
+        {% block day_nav %}
+        <a class="btn btn-primary" href="{{ url_for('agenda_friday') }}">Fri</a>
+        <a class="btn btn-primary" href="{{ url_for('agenda_saturday') }}">Sat</a>
+        <a class="btn btn-primary" href="{{ url_for('agenda_sunday') }}">Sun</a>
+        {% endblock day_nav %}
+    </div>
+    <div class="container mt-3" style="height: 300px; margin: 0px 0px 0px 0px;">
+    {% block day_content %}
+    <h3>Becoming FREE</h3>
+    <p>
+        Examining the past to determine how FREE moves forward <br/>with book discussion on <i>Becoming</i> by Michelle Obama</p>
+<p><b>Facilitators: </b><br/>Arielle Hernandez and Stephanie Fuentes
     </p>
+    {% endblock day_content %}
+    </div>
   </main>
 {% endblock content %}

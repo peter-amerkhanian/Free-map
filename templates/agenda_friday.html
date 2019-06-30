@@ -1,0 +1,38 @@
+{% extends "agenda.html" %}
+{% block day_nav %}
+        <a class="btn btn-secondary disabled" href="#">Fri</a>
+        <a class="btn btn-primary" href="{{ url_for('agenda_saturday') }}">Sat</a>
+        <a class="btn btn-primary" href="{{ url_for('agenda_sunday') }}">Sun</a>
+        {% endblock day_nav %}
+{% block day_content %}
+<h4>6/19 @ Hostel 593</h4>
+<div class="container mt-3" style="height: 300px; margin: 0px 0px 0px 0px;">
+        <div class="row no-gutters">
+            <div class="col-5">
+                <p class="text-right"><small><b>6:00 - 6:05 PM</b> </small></p>
+            </div>
+            <b class="mr-1 ml-1"></b>
+            <div class="col-5">
+                <p class="text-left"> Meet the New E-Board</p>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-5">
+                <p class="text-right"><small><b>6:05 - 6:15 PM </b></small></p>
+            </div>
+            <b class="mr-1 ml-1"></b>
+            <div class="col-5">
+                <p class="text-left"> Icebreaker - Map Activity</p>
+            </div>
+        </div>
+    <div class="row no-gutters">
+            <div class="col-5">
+                <p class="text-right"><small><b>6:15 - 7:00 PM</b></small></p>
+            </div>
+            <b class="mr-1 ml-1"></b>
+            <div class="col-5">
+                <p class="text-left">Disney / Marvel Trivia Game</p>
+            </div>
+        </div>
+    </div>
+    {% endblock day_content %}
