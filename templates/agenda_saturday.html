@@ -5,9 +5,13 @@
 <a class="btn btn-primary" href="{{ url_for('agenda_sunday') }}">Sun</a>
 {% endblock day_nav %}
 {% block day_content %}
-<div class="overflow-auto" style="border-color: #ffffff; border-left-style: solid; border-width: 1px">
-    <h4 class="mb-3">6/20 @ Peace Corps Office</h4>
-    <div class="container" style="height: 250px; margin: 0px 0px 0px 0px;">
+<div class="overflow-auto" style="border-color: #ffffff; border-style: solid; border-width: 2px; border-radius: 25px">
+    <h4 class="mb-3 mt-1">6/20 @ Peace Corps Office</h4>
+    <div class="container" style="height: 200px; margin: 0px 0px 0px 0px;">
+        <div class="container">
+            <h5 ><b>Scroll Here</b></h5>
+        <h2 class="mb-4"><i class="fas fa-angle-double-down"></i></h2>
+            </div>
         <div class="row no-gutters">
             <div class="col-5">
                 <p class="text-right">
@@ -45,7 +49,8 @@
             <div class="col-5">
                 <p class="text-right">
                     <small>
-                    <b>12:30 - 2:00 PM</b></small></p>
+                        <b>12:30 - 2:00 PM</b></small>
+                </p>
             </div>
             <b class="mr-1 ml-1"></b>
             <div class="col-5">
@@ -87,42 +92,41 @@
                     start thinking how they would organize meetings</p>
             </div>
         </div>
-            <div class="row no-gutters">
-                <div class="col-5">
-                    <p class="text-right">
-                        <small><b>Ally-Led</b></small>
-                    </p>
-                </div>
-                <b class="mr-1 ml-1"></b>
-                <div class="col-5">
-                    <p class="text-left">Allies will discuss NBA player
-                        Kyle Korver’s essay “Privileged”</p>
-                </div>
+        <div class="row no-gutters">
+            <div class="col-5">
+                <p class="text-right">
+                    <small><b>Ally-Led</b></small>
+                </p>
             </div>
-                <div class="row no-gutters">
-                    <div class="col-5">
-                        <p class="text-right">
-                            <small><b>4:00 - 4:45 PM</b></small>
-                        </p>
-                    </div>
-                    <b class="mr-1 ml-1"></b>
-                    <div class="col-5">
-                        <p class="text-left">118 Panels</p>
-                    </div>
-                </div>
-                <div class="row no-gutters">
-                    <div class="col-5">
-                        <p class="text-right">
-                            <small><b>4:45 - 5:00 PM</b></small>
-                        </p>
-                    </div>
-                    <b class="mr-1 ml-1"></b>
-                    <div class="col-5">
-                        <p class="text-left">Closing Words</p>
-                    </div>
-                </div>
-                <h5 class="mb-2"><b>Join us after the meeting to watch <br/>Lion King!</b></h5>
-        <h4 style="color:#ffffff">.</h4>
+            <b class="mr-1 ml-1"></b>
+            <div class="col-5">
+                <p class="text-left">Allies will discuss NBA player
+                    Kyle Korver’s essay “Privileged”</p>
             </div>
         </div>
-        {% endblock day_content %}
+        <div class="row no-gutters">
+            <div class="col-5">
+                <p class="text-right">
+                    <small><b>4:00 - 4:45 PM</b></small>
+                </p>
+            </div>
+            <b class="mr-1 ml-1"></b>
+            <div class="col-5">
+                <p class="text-left">118 Panel</p>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-5">
+                <p class="text-right">
+                    <small><b>4:45 - 5:00 PM</b></small>
+                </p>
+            </div>
+            <b class="mr-1 ml-1"></b>
+            <div class="col-5">
+                <p class="text-left">Closing Words</p>
+            </div>
+        </div>
+    </div>
+</div>
+<h6 class="mt-3 mb-3"><b>Join us after the meeting to watch <br/>Lion King!</b></h6>
+{% endblock day_content %}
